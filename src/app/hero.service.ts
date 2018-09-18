@@ -9,7 +9,7 @@ export class HeroService {
 
   constructor() { }
 
-  getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
+  getHeroes(): Hero[] {
+   return HEROES;
   }
 }
