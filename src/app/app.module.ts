@@ -10,6 +10,9 @@ import { HeroesComponent } from './heroes/heroes.component';
 
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { HttpClientModule}  from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService} from './in-memory-data.service';
 
 
 
@@ -17,7 +20,10 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule,
+    InMemoryDataService
   ],
   declarations: [
     AppComponent,
